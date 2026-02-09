@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="weather-app">
+    <h1>🌤 Weather Application</h1>
+    <form class="search-box" id="weatherForm" autocomplete="off">
+      <input type="text" id="cityInput" placeholder="Enter city name" aria-label="City name" required>
+      <button type="submit" aria-label="Search weather">Search</button>
+    </form>
+
+    <section id="weatherResult" class="result" aria-live="polite">
+      <h2 id="cityName"></h2>
+      <p id="temp"></p>
+      <p id="humidity"></p>
+      <p id="windSpeed"></p>
+      <p id="weather"></p>
+      <img src="ima.png" id="icon" alt="Weather Icon" style="display:none;">
+      <p id="errorMessage" class="error"></p>
+    </section>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
